@@ -21,3 +21,9 @@ jobs:
       - run:
           command: yarn build
           name: Build
+
+workflows:
+  version: 2
+  ci_build:
+    jobs:
+      - ci
