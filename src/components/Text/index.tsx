@@ -5,12 +5,15 @@ interface Props {
   text: ReactNode;
   size?: number;
   isBold?: boolean;
+  className?: string;
 }
 
 export default function Text({
   text,
   size = DEFAULT_FONT_SIZE,
   isBold = false,
+  className,
+  ...rest
 }: Props) {
   return (
     <div
@@ -18,9 +21,12 @@ export default function Text({
         {
           fontSize: `${size}px`,
           fontWeight: isBold ? BOLD_FONT_WEIGHT : undefined,
-          lineHeight: "30px",
+          lineHeight: `${size + 10}px`,
+          letterSpacing: "1.6px",
         },
       ]}
+      className={className}
+      {...rest}
     >
       {text}
     </div>
