@@ -1,9 +1,10 @@
 import Text from "components/Text";
 import { Spacing } from "components/Spacing";
 import { Flex } from "components/Flex";
+import { LocationMap } from "components/LocationMap";
 import { ENV } from "constant/env";
 
-const { TIME, PLACE } = ENV;
+const { TIME, PLACE, PLACE_LAT, PLACE_LNG } = ENV;
 
 export function Location() {
   return (
@@ -13,6 +14,13 @@ export function Location() {
         <Spacing size={25} />
         <Text text={`일시: ${TIME}`} />
         <Text text={`장소: ${PLACE}`} />
+        <Spacing size={25} />
+        <LocationMap
+          center={{
+            lat: Number(PLACE_LAT),
+            lng: Number(PLACE_LNG),
+          }}
+        />
       </Flex>
     </Flex>
   );

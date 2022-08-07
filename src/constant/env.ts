@@ -7,4 +7,7 @@ export const ENV = {
   GROOM: process.env.NEXT_PUBLIC_GROOM,
   TIME: process.env.NEXT_PUBLIC_TIME,
   PLACE: process.env.NEXT_PUBLIC_PLACE,
+  PLACE_LAT: process.env.NEXT_PUBLIC_PLACE_LAT,
+  PLACE_LNG: process.env.NEXT_PUBLIC_PLACE_LNG,
+  KAKAO_KEY: process.env.NEXT_PUBLIC_KAKAO_KEY,
 };
