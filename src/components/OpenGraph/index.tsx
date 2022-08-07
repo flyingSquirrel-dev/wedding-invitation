@@ -12,6 +12,8 @@ export function OpenGraph() {
       <meta property="og:type" content="website" />
       {/* TODO: og:url 추가하기 */}
       <meta property="og:url" content="" />
+      {/* TODO: og:description 추가하기  */}
+      <meta property="og:description" content="Welcome to my blog!" />
       <meta
         property="og:image"
         content="https://wisdom-kangto.s3.ap-northeast-2.amazonaws.com/OG_800_400.jpg"
