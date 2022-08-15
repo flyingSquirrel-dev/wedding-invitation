@@ -2,7 +2,16 @@ import { css, Global } from "@emotion/react";
 import { DEFAULT_BACKGROUND_COLOR } from "constant/style";
 
 export function GlobalStyle() {
-  return <Global styles={globalStyle} />;
+  return (
+    <>
+      <link
+        rel="preconnect"
+        href="https://cdn.jsdelivr.net"
+        crossOrigin="true"
+      />
+      <Global styles={globalStyle} />
+    </>
+  );
 }
 
 const globalStyle = css`
@@ -10,10 +19,7 @@ const globalStyle = css`
     font-family: "SeoulHangang";
     font-weight: 400;
     font-style: normal;
-    src: url("https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangLight.eot");
-    src: url("https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangLight.eot?#iefix")
-        format("embedded-opentype"),
-      url("https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangLight.woff2")
+    src: url("https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangLight.woff2")
         format("woff2"),
       url("https://cdn.jsdelivr.net/gh/webfontworld/seoulhangang/SeoulHangangLight.woff")
         format("woff"),
