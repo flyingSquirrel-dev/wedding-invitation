@@ -2,14 +2,14 @@ import styled from "@emotion/styled";
 import Image from "next/image";
 import { keyframes } from "@emotion/react";
 
-export function FlowerWithSteam2() {
+export function FlowerWithStem3() {
   return (
     <Container>
       <Image
-        src="/images/flowers-with-stem-2.svg"
+        src="/images/flowers-with-stem-3.svg"
         alt=""
-        width="100"
-        height="207"
+        width="67.53"
+        height="205.7"
         draggable={false}
       />
     </Container>
@@ -19,19 +19,19 @@ export function FlowerWithSteam2() {
 const flowerMoving = keyframes`
   0%,
   100% {
-    transform-origin: 32px 210px;
+    transform-origin: 50px 205px;
   }
 
   50% {
-    transform: rotate(30deg);
+    transform: rotate(-10deg);
   }
 `;
 
 const Container = styled.div`
   position: absolute;
-  left: -45px;
-  top: 0;
-  transform: rotate(27.11deg);
-  animation: ${flowerMoving} 5s ease-in-out infinite;
+  right: -20px;
+  top: 685.97px;
+  transform: rotate(-24deg);
+  animation: ${flowerMoving} 10s ease-in-out infinite;
   z-index: -1;
 `;
