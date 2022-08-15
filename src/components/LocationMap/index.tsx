@@ -54,7 +54,7 @@ export function LocationMap({ center }: Props) {
         ref={mapRef}
         css={[
           width100,
-          { maxWidth: `${MAX_WIDTH}px`, height: "265px" },
+          { maxWidth: `${MAX_WIDTH}px`, height: "450px" },
           margin("0 auto"),
         ]}
       />
