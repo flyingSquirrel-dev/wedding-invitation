@@ -3,11 +3,13 @@ import { GlobalStyle } from "components/GlobalStyle";
 import Head from "next/head";
 import { OpenGraph } from "components/OpenGraph";
 import { DocumentTitle } from "components/DocumentTitle";
+import { Favicon } from "../src/components/Favicon";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <DocumentTitle />
+      <Favicon />
       <Head>
         <GlobalStyle />
         <meta
