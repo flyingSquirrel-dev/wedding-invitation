@@ -21,9 +21,9 @@ export function Location() {
           </Flex>
         </Flex>
       </Flex>
-      <Spacing size={50} />
+      <Spacing size={80} />
       <Calendar />
-      <Spacing size={50} />
+      <Spacing size={80} />
       <LocationMap
         center={{
           lat: Number(PLACE_LAT),
