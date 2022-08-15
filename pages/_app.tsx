@@ -1,9 +1,9 @@
-import type { AppProps } from "next/app";
-import { GlobalStyle } from "components/GlobalStyle";
-import Head from "next/head";
-import { OpenGraph } from "components/OpenGraph";
 import { DocumentTitle } from "components/DocumentTitle";
-import { Favicon } from "../src/components/Favicon";
+import { Favicon } from "components/Favicon";
+import { GlobalStyle } from "components/GlobalStyle";
+import { OpenGraph } from "components/OpenGraph";
+import type { AppProps } from "next/app";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

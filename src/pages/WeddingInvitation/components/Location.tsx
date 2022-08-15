@@ -1,10 +1,10 @@
-import Text from "components/Text";
-import { Spacing } from "components/Spacing";
+import { Calendar } from "components/Calendar";
 import { Flex } from "components/Flex";
 import { LocationMap } from "components/LocationMap";
 import { Navi } from "components/Navi";
+import { Spacing } from "components/Spacing";
+import Text from "components/Text";
 import { ENV } from "constant/env";
-import { Calendar } from "components/Calendar";
 
 const { TIME, PLACE_ADDRESS, PLACE_NAME, PLACE_LAT, PLACE_LNG } = ENV;
 

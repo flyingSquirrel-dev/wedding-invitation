@@ -1,5 +1,5 @@
-import { ReactNode } from "react";
 import { BOLD_FONT_WEIGHT, DEFAULT_FONT_SIZE } from "constant/style";
+import { ReactNode } from "react";
 
 interface Props {
   text: ReactNode;

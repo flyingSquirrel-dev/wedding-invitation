@@ -1,20 +1,19 @@
-import { Spacing } from "components/Spacing";
 import styled from "@emotion/styled";
 import { FlowerWithStem1 } from "components/images/flowers/FlowerWithStem1";
 import { FlowerWithStem2 } from "components/images/flowers/FlowerWithStem2";
-import { BrideAndGroom } from "components/images/person/BrideAndGroom";
-import { Header } from "./components/Header";
-import { Host } from "./components/Host";
-import { WelcomeMessage } from "./components/WelcomeMessage";
-import { Location } from "./components/Location";
 import { FlowerWithStem3 } from "components/images/flowers/FlowerWithStem3";
 import { FlowerWithStem4 } from "components/images/flowers/FlowerWithStem4";
 import { FlowerWithStem5 } from "components/images/flowers/FlowerWithStem5";
 import { FlowerWithStem6 } from "components/images/flowers/FlowerWithStem6";
-import { MacBook } from "../../components/images/misc/MacBook";
-import { FlowerFlakes } from "./components/FlowerFlakes";
+import { MacBook } from "components/images/misc/MacBook";
+import { BrideAndGroom } from "components/images/person/BrideAndGroom";
+import { Spacing } from "components/Spacing";
 
-// TODO: import sort 적용해놓기
+import { FlowerFlakes } from "./components/FlowerFlakes";
+import { Header } from "./components/Header";
+import { Host } from "./components/Host";
+import { Location } from "./components/Location";
+import { WelcomeMessage } from "./components/WelcomeMessage";
 
 export default function WeddingInvitation() {
   return (

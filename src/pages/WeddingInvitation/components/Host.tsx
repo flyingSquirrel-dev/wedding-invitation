@@ -1,7 +1,7 @@
 import { Flex } from "components/Flex";
 import Text from "components/Text";
-import { margin } from "utils/emotions/margin";
 import { ENV } from "constant/env";
+import { margin } from "utils/emotions/margin";
 
 const {
   FATHER_OF_THE_GROOM,
