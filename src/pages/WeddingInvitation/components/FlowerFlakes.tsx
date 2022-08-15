@@ -60,7 +60,7 @@ export function FlowerFlakes() {
 
 const baseFlowerFlakeStyle = css`
   position: absolute;
-  top: -20px;
+  top: -35px;
 `;
 
 const flowerFlakeKeyFrames = keyframes`
