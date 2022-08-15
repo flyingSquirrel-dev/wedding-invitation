@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import Script from "next/script";
 import { ENV } from "constant/env";
 import { width100 } from "utils/emotions/width";
+import { MAX_WIDTH } from "constant/style";
+import { margin } from "utils/emotions/margin";
 
 const { KAKAO_KEY } = ENV;
 
@@ -47,7 +49,15 @@ export function LocationMap({ center }: Props) {
         src={`//dapi.kakao.com/v2/maps/sdk.js?appkey=${KAKAO_KEY}&autoload=false`}
         onLoad={() => setMapLoaded(true)}
       />
-      <div id="map" ref={mapRef} css={[width100, { height: "265px" }]} />
+      <div
+        id="map"
+        ref={mapRef}
+        css={[
+          width100,
+          { maxWidth: `${MAX_WIDTH}px`, height: "265px" },
+          margin("0 auto"),
+        ]}
+      />
     </>
   );
 }
