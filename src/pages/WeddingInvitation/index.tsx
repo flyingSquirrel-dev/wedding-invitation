@@ -12,12 +12,14 @@ import { FlowerWithStem4 } from "components/images/flowers/FlowerWithStem4";
 import { FlowerWithStem5 } from "components/images/flowers/FlowerWithStem5";
 import { FlowerWithStem6 } from "components/images/flowers/FlowerWithStem6";
 import { MacBook } from "../../components/images/misc/MacBook";
+import { FlowerFlakes } from "./components/FlowerFlakes";
 
 // TODO: import sort 적용해놓기
 
 export default function WeddingInvitation() {
   return (
     <Container>
+      <FlowerFlakes />
       <FlowerWithStem1 />
       <FlowerWithStem2 />
       <Spacing size={100} />
