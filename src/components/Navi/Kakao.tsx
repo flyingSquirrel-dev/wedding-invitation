@@ -12,16 +12,16 @@ export function KakaoNavi() {
     if (PLACE_NAME && PLACE_LAT && PLACE_LNG) {
       Kakao.Navi.start({
         name: PLACE_NAME,
-        x: Number(PLACE_LNG ?? ""),
-        y: Number(PLACE_LAT ?? ""),
+        x: Number(PLACE_LNG),
+        y: Number(PLACE_LAT),
         coordType: "wgs84",
       });
     }
   }, []);
 
   useEffect(() => {
-    if (kakaoLoaded) {
-      Kakao.init(KAKAO_KEY ?? "");
+    if (kakaoLoaded && KAKAO_KEY) {
+      Kakao.init(KAKAO_KEY);
     }
 
     return () => {
