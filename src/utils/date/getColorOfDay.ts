@@ -1,6 +1,6 @@
 import { DAYS } from "constant/calendar";
-import { match } from "ts-pattern";
 import { colors } from "constant/colors";
+import { match } from "ts-pattern";
 
 export function getColorOfDay(day: DAYS) {
   return match(day)

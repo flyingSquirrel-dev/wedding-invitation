@@ -1,9 +1,9 @@
-import { useEffect, useRef, useState } from "react";
-import Script from "next/script";
 import { ENV } from "constant/env";
-import { width100 } from "utils/emotions/width";
 import { MAX_WIDTH } from "constant/style";
+import Script from "next/script";
+import { useEffect, useRef, useState } from "react";
 import { margin } from "utils/emotions/margin";
+import { width100 } from "utils/emotions/width";
 
 const { KAKAO_KEY } = ENV;
 

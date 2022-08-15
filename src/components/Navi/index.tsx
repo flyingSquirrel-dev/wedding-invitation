@@ -1,8 +1,9 @@
 import { Flex } from "components/Flex";
 import { Spacing } from "components/Spacing";
+
 import { KakaoNavi } from "./Kakao";
-import { Tmap } from "./Tmap";
 import { Naver } from "./Naver";
+import { Tmap } from "./Tmap";
 
 export function Navi() {
   return (

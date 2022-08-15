@@ -1,6 +1,8 @@
 declare namespace Kakao {
   export function init(key: string): void;
+
   export function isInitialized(): boolean;
+
   export function cleanup(): void;
 
   export interface NaviOptions {

@@ -5,7 +5,8 @@
     "@typescript-eslint",
     "css",
     "@emotion",
-    "prettier"
+    "prettier",
+    "simple-import-sort"
   ],
   "extends": [
     "next/core-web-vitals",
@@ -53,6 +54,8 @@
         "maxBOF": 1
       }
     ],
-    "no-trailing-spaces": "error"
+    "no-trailing-spaces": "error",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error"
   }
 }

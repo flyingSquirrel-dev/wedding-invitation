@@ -1,5 +1,5 @@
-import Image from "next/image";
 import { Flex } from "components/Flex";
+import Image from "next/image";
 
 export function BrideAndGroom() {
   return (

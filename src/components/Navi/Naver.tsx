@@ -1,7 +1,6 @@
+import { ENV } from "constant/env";
 import Image from "next/image";
 import { useCallback } from "react";
-
-import { ENV } from "constant/env";
 
 const { NAVER_URL } = ENV;
 

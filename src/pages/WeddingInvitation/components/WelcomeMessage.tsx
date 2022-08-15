@@ -1,6 +1,6 @@
-import Text from "components/Text";
-import { Spacing } from "components/Spacing";
 import { Flex } from "components/Flex";
+import { Spacing } from "components/Spacing";
+import Text from "components/Text";
 
 export function WelcomeMessage() {
   return (

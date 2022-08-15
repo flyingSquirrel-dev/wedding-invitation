@@ -1,7 +1,7 @@
-import Script from "next/script";
-import Image from "next/image";
-import { useCallback, useEffect, useState } from "react";
 import { ENV } from "constant/env";
+import Image from "next/image";
+import Script from "next/script";
+import { useCallback, useEffect, useState } from "react";
 
 const { KAKAO_KEY, PLACE_NAME, PLACE_LAT, PLACE_LNG } = ENV;
 
