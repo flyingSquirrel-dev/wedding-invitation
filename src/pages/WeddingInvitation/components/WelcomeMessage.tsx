@@ -5,7 +5,7 @@ import { Flex } from "components/Flex";
 export function WelcomeMessage() {
   return (
     <Flex justify="center">
-      <Flex direction="column" isWidth100={false}>
+      <Flex direction="column" align="center" isWidth100={false}>
         <Text text="모시는 말씀" size={32} />
         <Spacing size={25} />
         <Text

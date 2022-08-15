@@ -2,10 +2,12 @@ import type { AppProps } from "next/app";
 import { GlobalStyle } from "components/GlobalStyle";
 import Head from "next/head";
 import { OpenGraph } from "components/OpenGraph";
+import { DocumentTitle } from "components/DocumentTitle";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
+      <DocumentTitle />
       <Head>
         <GlobalStyle />
         <meta
