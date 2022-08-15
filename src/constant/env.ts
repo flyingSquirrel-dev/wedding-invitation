@@ -6,8 +6,10 @@ export const ENV = {
   BRIDE: process.env.NEXT_PUBLIC_BRIDE,
   GROOM: process.env.NEXT_PUBLIC_GROOM,
   TIME: process.env.NEXT_PUBLIC_TIME,
-  PLACE: process.env.NEXT_PUBLIC_PLACE,
+  PLACE_ADDRESS: process.env.NEXT_PUBLIC_PLACE_ADDRESS,
+  PLACE_NAME: process.env.NEXT_PUBLIC_PLACE_NAME,
   PLACE_LAT: process.env.NEXT_PUBLIC_PLACE_LAT,
   PLACE_LNG: process.env.NEXT_PUBLIC_PLACE_LNG,
   KAKAO_KEY: process.env.NEXT_PUBLIC_KAKAO_KEY,
+  SK_KEY: process.env.NEXT_PUBLIC_SK_KEY,
 };
