@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import Image from "next/image";
 import { keyframes } from "@emotion/react";
 
-export function FlowerWithSteam4() {
+export function FlowerWithStem4() {
   return (
     <Container>
       <Image
