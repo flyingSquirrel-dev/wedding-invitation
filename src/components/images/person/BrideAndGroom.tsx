@@ -8,8 +8,8 @@ export function BrideAndGroom() {
         src="/images/wisdom-kangto.svg"
         alt=""
         layout="fixed"
-        width="118.85"
-        height="145"
+        width="178"
+        height="217"
         draggable={false}
       />
     </Flex>
