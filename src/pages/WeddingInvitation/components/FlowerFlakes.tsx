@@ -35,24 +35,26 @@ export function FlowerFlakes() {
     return rangeArray[Math.floor(Math.random() * rangeArray.length)];
   }, []);
 
+  if (!isMounted) {
+    return null;
+  }
+
   return (
-    isMounted && (
-      <div>
-        {range(1, 77).map((flower) => (
-          <FlowerFlake
-            key={`flower-flake-${flower}`}
-            css={[
-              baseFlowerFlakeStyle,
-              { left: `${getRandomPosition()}px` },
-              flowerFlakeAnimation(getRandomDuration()),
-              { animationDelay: `${getRandomAnimationDelay()}s` },
-              { scale: `${getRandomScale()}` },
-              { zIndex: getRandomZindex() },
-            ]}
-          />
-        ))}
-      </div>
-    )
+    <div>
+      {range(1, 77).map((flower) => (
+        <FlowerFlake
+          key={`flower-flake-${flower}`}
+          css={[
+            baseFlowerFlakeStyle,
+            { left: `${getRandomPosition()}px` },
+            flowerFlakeAnimation(getRandomDuration()),
+            { animationDelay: `${getRandomAnimationDelay()}s` },
+            { scale: `${getRandomScale()}` },
+            { zIndex: getRandomZindex() },
+          ]}
+        />
+      ))}
+    </div>
   );
 }
 
