@@ -12,4 +12,5 @@ export const ENV = {
   PLACE_LNG: process.env.NEXT_PUBLIC_PLACE_LNG,
   KAKAO_KEY: process.env.NEXT_PUBLIC_KAKAO_KEY,
   SK_KEY: process.env.NEXT_PUBLIC_SK_KEY,
+  NAVER_URL: process.env.NEXT_PUBLIC_NAVER_URL,
 };
