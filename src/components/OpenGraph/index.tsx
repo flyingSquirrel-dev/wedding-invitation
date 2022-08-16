@@ -1,6 +1,7 @@
 import { ENV } from "constant/env";
 
-const { BRIDE, GROOM, TIME, PLACE_NAME } = ENV;
+const { BRIDE, GROOM, TIME, PLACE_NAME, GROOM_FIRST_NAME, BRIDE_FIRST_NAME } =
+  ENV;
 
 export function OpenGraph() {
   return (
@@ -10,6 +11,10 @@ export function OpenGraph() {
         content={`${GROOM} 🤍 ${BRIDE} 결혼식에 초대해요.`}
       />
       <meta property="og:type" content="website" />
+      <meta
+        property="og:url"
+        content={`https://${GROOM_FIRST_NAME}${BRIDE_FIRST_NAME}.site`}
+      />
       <meta property="og:url" content="https://www.xn--939aq67ceni1c.site" />
       <meta property="og:description" content={`${TIME} ${PLACE_NAME}`} />
       <meta
