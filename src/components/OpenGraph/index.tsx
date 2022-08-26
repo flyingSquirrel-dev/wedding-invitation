@@ -28,6 +28,12 @@ export function OpenGraph() {
         property="og:url"
         content={`https://${GROOM_FIRST_NAME}${BRIDE_FIRST_NAME}.site`}
       />
+      <meta
+        property="og:url"
+        content={`https://${encodeURIComponent(
+          `${GROOM_FIRST_NAME}${BRIDE_FIRST_NAME}`
+        )}.site`}
+      />
       <meta property="og:url" content="https://www.xn--939aq67ceni1c.site" />
       <meta property="og:description" content={`${TIME} ${PLACE_NAME}`} />
       <meta
