@@ -7,6 +7,19 @@ export function OpenGraph() {
   return (
     <>
       <meta
+        name="twitter:title"
+        content={`${GROOM} 🤍 ${BRIDE} 결혼식에 초대해요.`}
+      />
+      <meta name="twitter:description" content={`${TIME} ${PLACE_NAME}`} />
+      <meta
+        name="twitter:image"
+        content="https://wisdom-kangto.s3.ap-northeast-2.amazonaws.com/OG_800_400.jpg"
+      />
+      <meta
+        name="twitter:site"
+        content={`https://${GROOM_FIRST_NAME}${BRIDE_FIRST_NAME}.site`}
+      />
+      <meta
         property="og:title"
         content={`${GROOM} 🤍 ${BRIDE} 결혼식에 초대해요.`}
       />
